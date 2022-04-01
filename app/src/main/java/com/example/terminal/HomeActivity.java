@@ -35,6 +35,8 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void initPreferences(){
+        //First we clear the preferences
+        PreferenceManager.getDefaultSharedPreferences(this).edit().clear().apply();
         //Call to setDefaultValues for set values of XML preferences definitions
         PreferenceManager.setDefaultValues(this, R.xml.preferences, true);
         //get the values of the settings options
@@ -42,6 +44,5 @@ public class HomeActivity extends AppCompatActivity {
         //get the values of the settings options
         username = pre.getString("username", null);
         password = pre.getString("password", null);
-
     }
 }

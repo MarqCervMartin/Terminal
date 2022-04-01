@@ -4,13 +4,13 @@
     <EditTextPreference
         android:key="username"
         android:title="Username"
-        android:defaultValue="mares"
+        android:defaultValue="Mares"
         android:persistent="true"/>
 
     <EditTextPreference
         android:key="password"
         android:title="Password"
-        android:defaultValue="1234567"
+        android:defaultValue="123"
         android:persistent="true"/>
 
 </PreferenceScreen>
